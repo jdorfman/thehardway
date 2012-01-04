@@ -26,10 +26,30 @@ print "If I add %d, %d, and %d I get %d." % (age, height, weight, age + height +
 # 2: When I switch %s to %r it started printing 'Zed A. Shaw' instead of Zed A. Shaw.
 # 3: Have Fun: http://docs.python.org/release/2.5.2/lib/typesseq-strings.html
 # 4: write some variables that convert the inches and pounds to centimeters and kilos:
-# inches to centimeters - 2.54cm in 1 inch
+# inches to centimeters - 2.54cm in 1 inch - pounds to kilos - 0.45359237 in 1 pount
 cm = 2.54
 cm_height = cm * height
 print "%s is this tall in centimeters: %s" % (name, cm_height)
+
+kilo = 0.45359237
+kilo_pound = kilo * weight
+print "%s weighs about %d kilos." % (name, kilo_pound)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
