@@ -24,3 +24,7 @@ print "The third variable is:", third
 # 2: See ex13-ec2a.py and ex13-ec2b.py
 
 # 3: See ex13-ec3.py
+
+# 4: Modules give you features.
+# Modules give you features.
+# What gives you features in Python? MODULES!!!!
