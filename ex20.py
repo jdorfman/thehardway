@@ -13,7 +13,7 @@ def print_all(f):
 # I need to look this up I am not sure WTF is going on here:    
 def rewind(f):
     print f.seek(0)
-
+    
 def print_a_line(line_count, f):
     print line_count, f.readline() # read one line at a time
 
@@ -25,16 +25,37 @@ print_all(current_file) # execute the first function: print out everything from 
 print "Now lets rewind, kind of like a tape."
 rewind(current_file) # for me this does nothing except print 'none'
 
-print "Lets print 3 lines"
-current_line = 1 # define the first line (1)
+print "\n Lets print 3 lines"
+current_line = 1 # define the first line = 1
 print_a_line(current_line, current_file) # 1. first line of test.txt
-current_line = current_line + 1 # 2
+current_line += 1 #current_line + 1 # current_line = 2
 print_a_line(current_line, current_file) # 2. second line of test.txt
-current_line = current_line + 1 # 3
+current_line += 1 #current_line = 1 # current_line = 3
 print_a_line(current_line, current_file) # 3. third line of test.txt
 
 current_file.close() # added that because it is good practice
 
 # Extra Credit
 # 1: Write english comments above each line to explain what is going on.
-# 2: 
+# 2: Each time print_a_line is run you are passing in a variable current_line. Write out what current_line is equal to on each function call, 
+# and trace how it becomes line_count in print_a_line.
+# 3: Find each place a function is used, and go check its def to make sure that you are giving it the right arguments.
+# It looks like every function is right except the seek()
+# I am still stumped with seek() - I read this: http://www.sthurlow.com/python/lesson10/ which makes more sense than python.org but still stumped
+# 4: Research online what the seek function for file does. Try pydoc file and see if you can figure it out from there.
+# I was able to find a use for seek, but it kept breaking my print_a_line function
+# Lets say you want to start printing test.txt after t in the on line 1:
+# you would type:
+# f.seek(8)
+# f.read()
+# he people out there. # < it will print that.
+# 5: Research the shorthand notation += and rewrite the script to use that.
+# += adds another value with the variable's value and assigns the new value to the variable.
+# Just when I was going to give up...:
+# Starting with line 31: current_line += 1 instead of current_line + current_line = 2
+
+
+
+
+
+ 
