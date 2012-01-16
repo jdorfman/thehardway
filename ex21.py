@@ -132,7 +132,7 @@ print nl
 # Try to change it on purpose to make another value.
 
 def DIV(a, b):
-    print "%d / %d =" % (a, b)
+    print "%d / %d" % (a, b)
     return a / b
 
 def MUL(a, b):
@@ -152,16 +152,13 @@ ec2b = MUL(180, ec2a)
 ec2c = SUB(74, ec2b)
 ec2d = ADD(35, ec2c)
 
-print nl, "Div: %d Mul: %d Sub: %d Add: %d" % (ec2a, ec2b, ec2c, ec2d)
+print nl, "Div: %d \nMul: %d \nSub: %d \nAdd: %d" % (ec2a, ec2b, ec2c, ec2d)
 
-print "That becomes %d Can you do it by hand?" % (ec2d)
+print nl, "That becomes %d Can you do it by hand?" % (ec2d)
 
 # 4: Finally, do the inverse. Write out a simple formula and use the functions in the same way to calculate it.
 
 ecfour = DIV(ec2a, MUL(ec2b, SUB(ec2c, ADD(ec2d, 2))))
 
-print ecfour
+print ecfour # I think that is what Zed wanted...
 
-
-# This needs MAJOR clean up which I will do tomorrow
-# Good night
