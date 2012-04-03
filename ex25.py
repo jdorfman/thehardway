@@ -56,14 +56,3 @@ def print_first_and_last_sorted(sentence):
 # 1 - 4 Complete
 
 
-
-
-
-
-
-
-
-
-
-
-

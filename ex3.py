@@ -1,4 +1,4 @@
-# This is Exercise no. 3 - http://learnpythonthehardway.org/book/ex3.html
+#This is Exercise no. 3 - http://learnpythonthehardway.org/book/ex3.html
 
 print "I will now count my chickens:"
 
