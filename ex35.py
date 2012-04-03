@@ -62,7 +62,7 @@ def bear_room():
 		elif next == "" and bear_moved:
 			gold_room()
 		else:
-			print "I got no idea what that means. Please type 1 or 2"
+			print "I have no idea what that means. Please type 1 or 2"
 
 def cthulhu_room():
 	print "Here you see the great evil Cthulhu.\nHe, it, whatever stares at you and you go insane.\nDo you flee for your life or eat your head?"
